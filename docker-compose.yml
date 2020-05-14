@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+    code-server:
+        image: codercom/code-server
+        volumes:
+            - $HOME/Projects:/home/coder/Projects
+            - $HOME/.local/share/code-server:/home/coder/.local/share/code-server
+        user: $UID:$GID
+        ports:
+            - 18080:8080
+        command: code-server --auth none
