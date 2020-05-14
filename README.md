@@ -9,3 +9,5 @@ mkdir -p $HOME/Projects
 mkdir -p $HOME/.local/share/code-server
 UID=${UID} GID=${GID} docker-compose up
 ```
+
+Access http://$HOSTNAME:18080/
